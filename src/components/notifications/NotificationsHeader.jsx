@@ -1,5 +1,6 @@
 import { v4 as uuid } from "uuid";
 import "../../styles/notifications/NotificationsHeader.css";
+import NotificationsSort from "./NotificationsSort";
 
 const NotificationsHeader = () => {
   const headerOptions = [
@@ -19,6 +20,7 @@ const NotificationsHeader = () => {
           {option.option}
         </span>
       ))}
+      <NotificationsSort />
     </div>
   );
 };

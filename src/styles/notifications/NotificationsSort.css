@@ -1,0 +1,29 @@
+.notification-sort {
+  position: relative;
+}
+
+.notification-sort__modal {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: grid;
+  position: absolute;
+  width: max-content;
+  box-shadow: 0px 10px 50px -4px rgba(35, 35, 35, 0.15);
+}
+
+.notification-sort__modal__option {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  padding: 8px 16px;
+}
+
+.notification-sort__modal__option:nth-of-type(n + 2) {
+  border-top: 1px solid #d9dbe1;
+}
+
+.notification-sort__modal__option--active {
+  font-weight: 500;
+  color: #121212;
+}
