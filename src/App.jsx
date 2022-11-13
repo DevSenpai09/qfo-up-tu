@@ -11,6 +11,7 @@ import Notifications from "./components/notifications";
 import NotificationItem from "./components/notifications/notificationItem";
 import ToolTip from "./components/ToolTip";
 import NotificationsHeader from "./components/notifications/NotificationsHeader";
+import APTable from "./components/ap-table";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <NotificationsHeader />
       <NotificationItem />
       <Notifications />
+      <APTable />
     </div>
   );
 }

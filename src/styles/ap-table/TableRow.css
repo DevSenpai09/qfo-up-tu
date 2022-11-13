@@ -1,0 +1,10 @@
+.table-row,
+.table-row__row-data {
+  display: flex;
+  align-items: center;
+}
+
+.table-row__row-data > * {
+  min-width: 200px;
+  margin-left: 20px;
+}

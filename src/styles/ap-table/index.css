@@ -1,0 +1,24 @@
+.ap-table {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.table-row__table-header__data {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.003em;
+  color: #121212;
+}
+
+.table-row__table-content-wrapper > *:nth-of-type(odd) {
+  background-color: #f9fafb;
+}
+
+.table-row__table-content__data {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.003em;
+  color: #474a57;
+}
