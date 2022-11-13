@@ -1,0 +1,36 @@
+.date {
+  border: 2px solid #d9dbe1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px 16px;
+  display: grid;
+}
+
+.date__title {
+  margin: 0;
+  font-weight: 300;
+  font-size: 8px;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  text-transform: capitalize;
+}
+
+.date__input {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+}
+
+.date__input::-webkit-calendar-picker-indicator {
+  appearance: none;
+}

@@ -1,0 +1,19 @@
+.notifications-header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  width: max-content;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.notification-header__option {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.003em;
+  color: #969bab;
+}
+
+.notification-header__option--active {
+  color: #121212;
+}

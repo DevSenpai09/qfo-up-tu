@@ -1,0 +1,29 @@
+.tool-tip {
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  position: relative;
+}
+
+.tool-tip::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: -8px;
+  top: 47%;
+  background: #ffffff;
+  border-radius: 1px;
+  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0) translateY(-50%);
+}
+
+.tool-tip__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.003em;
+  color: #121212;
+}

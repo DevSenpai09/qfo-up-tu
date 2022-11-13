@@ -1,0 +1,39 @@
+.alert-box {
+  display: flex;
+  background: #f6fef9;
+  border: 1px solid #6ce9a6;
+  border-radius: 8px;
+  padding: 20px 24px;
+  width: max-content;
+}
+
+.alert-box__details {
+  margin: 0 17px;
+}
+
+.alert-box__details__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #027a48;
+}
+
+.alert-box__details__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #039855;
+}
+
+.alert-box__icon {
+  font-size: 21px;
+  color: #039855;
+}
+
+.alert-box__check-icon {
+  font-size: 25px;
+}
