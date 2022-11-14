@@ -1,0 +1,16 @@
+.table-header {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.table-header__data {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.003em;
+  color: #121212;
+  width: 200px;
+  margin-left: 20px;
+  text-transform: capitalize;
+}

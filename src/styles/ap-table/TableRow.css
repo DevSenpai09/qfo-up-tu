@@ -1,10 +1,9 @@
-.table-row,
-.table-row__row-data {
-  display: flex;
-  align-items: center;
+.table-row {
+  padding: 16px 0;
 }
 
-.table-row__row-data > * {
-  min-width: 200px;
-  margin-left: 20px;
+.table-row,
+.table-row__row-info {
+  display: flex;
+  align-items: center;
 }

@@ -1,0 +1,16 @@
+.table-content {
+  width: max-content;
+}
+
+.table-content > *:nth-of-type(odd) {
+  background-color: #f9fafb;
+}
+
+.table-content__table-row__data {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  width: 200px;
+  margin-left: 20px;
+}
