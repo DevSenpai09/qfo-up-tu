@@ -2,3 +2,7 @@ body {
   font-family: "Poppins";
   background-color: #eee;
 }
+
+h1 {
+  text-align: center;
+}
