@@ -1,7 +1,7 @@
 import AlertBox from "../components/AlertBox";
 import APFilter from "../components/ap-filters";
-import Date from "../components/ap-filters/Date";
-import Tags from "../components/ap-filters/Tag";
+import Date from "../components/FilterDate";
+import Tags from "../components/Tag";
 import APSettings from "../components/ap-settings";
 import Info from "../components/SettingsInfo";
 import Options from "../components/Options";
@@ -12,6 +12,7 @@ import NotificationItem from "../components/notifications/notificationItem";
 import ToolTip from "../components/ToolTip";
 import NotificationsHeader from "../components/notifications/NotificationsHeader";
 import APTable from "../components/ap-table";
+import NotificationBell from "../components/notificationBell";
 
 const AP = () => {
   return (
@@ -45,6 +46,7 @@ const AP = () => {
         <NotificationItem />
         <Notifications />
         <APTable />
+        <NotificationBell />
       </div>
     </>
   );
