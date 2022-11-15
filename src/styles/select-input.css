@@ -10,9 +10,10 @@
 
 .select-input__input-wrapper {
   padding: 8px 16px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
 }

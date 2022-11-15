@@ -1,0 +1,15 @@
+.pagination-select {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 12px;
+  align-items: center;
+  width: max-content;
+}
+
+.pagination-select__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+}

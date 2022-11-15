@@ -18,6 +18,7 @@
   text-transform: capitalize;
   padding: 8px 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .drop-down__option:nth-of-type(n + 2) {
