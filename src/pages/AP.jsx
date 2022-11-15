@@ -13,8 +13,23 @@ import ToolTip from "../components/ToolTip";
 import NotificationsHeader from "../components/notifications/NotificationsHeader";
 import APTable from "../components/ap-table";
 import NotificationBell from "../components/notificationBell";
+import DropDown from "../components/drop-down";
+import SelectInput from "../components/select-input";
 
 const AP = () => {
+  const options = [
+    "Brand 1",
+    "Brand 2",
+    "Brand 3",
+    "Brand 4",
+    "Brand 5",
+    "Brand 6",
+    "Brand 7",
+    "Brand 8",
+    "Brand 9",
+    "Brand 10",
+  ];
+
   return (
     <>
       <h1>Ap Components</h1>
@@ -47,6 +62,8 @@ const AP = () => {
         <Notifications />
         <APTable />
         <NotificationBell />
+        <SelectInput placeholder="Select Brand" />
+        <DropDown options={options} />
       </div>
     </>
   );

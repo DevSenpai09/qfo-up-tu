@@ -1,0 +1,18 @@
+.select-input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d9dbe1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.select-input__placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #969bab;
+}

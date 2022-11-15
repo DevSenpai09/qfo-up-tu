@@ -1,0 +1,29 @@
+.search-input {
+  background: #f4f5f7;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.search-input__input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #969bab;
+  border: none;
+  background-color: transparent;
+  padding-left: 7px;
+  outline: none;
+}
+
+.search-input__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #969bab;
+}
