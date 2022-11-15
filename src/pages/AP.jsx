@@ -36,7 +36,7 @@ const AP = () => {
         <ToolTip />
         <AlertBox
           title="Unarchived successfully!"
-          message="2 products unarchived successfully"
+          message="3 Products have been changed to Status “Waiting test” successfully!"
         />
         <Tags text="Inactive" />
         <Tags text="active" active />

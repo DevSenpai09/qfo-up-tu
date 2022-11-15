@@ -1,3 +1,7 @@
+:root {
+  --toastify-color-progress-light: #add1c2;
+}
+
 body {
   font-family: "Poppins";
   background-color: #eee;
@@ -5,4 +9,20 @@ body {
 
 h1 {
   text-align: center;
+}
+
+.Toastify__toast-theme--light {
+  background: #f6fef9;
+  border: 1px solid #6ce9a6;
+  padding: 20px 24px;
+  width: 540px;
+}
+
+.Toastify__toast-body {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.Toastify__toast-container--top-right {
+  right: 15.5em;
 }
