@@ -1,6 +1,6 @@
-import "../../styles/ap-settings/index.css";
+import "../../styles/settings.css";
 import Button from "../Button";
-import Info from "./Info";
+import Info from "../SettingsInfo";
 import Options from "../Options";
 
 const APSettings = () => {
@@ -16,11 +16,11 @@ const APSettings = () => {
     "Archived Date",
   ];
   return (
-    <div className="ap-settings">
+    <div className="settings">
       <Info />
-      <p className="ap-settings__visible">1 of 15 visible</p>
+      <p className="settings__visible">1 of 15 visible</p>
       <Options options={options} />
-      <div className="ap-settings__buttons">
+      <div className="settings__buttons">
         <Button text="cancel" />
         <Button text="save" primary />
       </div>

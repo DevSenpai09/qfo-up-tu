@@ -5,6 +5,8 @@
   border-radius: 8px;
   padding: 20px 24px;
   width: max-content;
+  position: relative;
+  overflow: hidden;
 }
 
 .alert-box__details {
@@ -36,4 +38,12 @@
 
 .alert-box__check-icon {
   font-size: 25px;
+}
+
+.alertbox-box__loader {
+  position: absolute;
+  height: 5px;
+  background-color: #add1c2;
+  bottom: 0;
+  left: 0;
 }

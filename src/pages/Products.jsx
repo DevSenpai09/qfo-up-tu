@@ -1,3 +1,5 @@
+import ProductsSettings from "../components/product-settings";
+
 const Products = () => {
   return (
     <>
@@ -9,7 +11,9 @@ const Products = () => {
           justifyItems: "left",
           gap: "30px",
         }}
-      ></div>
+      >
+        <ProductsSettings />
+      </div>
     </>
   );
 };

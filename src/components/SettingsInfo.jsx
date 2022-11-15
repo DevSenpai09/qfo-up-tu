@@ -1,15 +1,15 @@
-import "../../styles/ap-settings/Info.css";
+import "../styles/SettingsInfo.css";
 import { RiErrorWarningLine } from "react-icons/ri";
 
 const Info = () => {
   return (
-    <div className="info">
-      <RiErrorWarningLine className="info__icon" />
-      <div className="info__details">
-        <h4 className="info__details__title">
+    <div className="settings-info">
+      <RiErrorWarningLine className="settings-info__icon" />
+      <div className="settings-info__details">
+        <h4 className="settings-info__details__title">
           Please select columns you need and drag to adjust column order.{" "}
         </h4>
-        <p className="info__details__text">
+        <p className="settings-info__details__text">
           The selected column will be displayed according to the column order
           from top to bottom and left to right
         </p>
