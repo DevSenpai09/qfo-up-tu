@@ -1,8 +1,8 @@
-import "../../styles/ap-filters/index.css";
+import "../../../styles/ap-page/ap-filters/index.css";
 import { v4 as uuid } from "uuid";
-import Button from "../Button";
-import Date from "../FilterDate";
-import Tags from "../Tag";
+import Button from "../../Button";
+import Date from "../../FilterDate";
+import Tags from "../../Tag";
 import { IoIosRemoveCircle } from "react-icons/io";
 
 const APFilter = () => {

@@ -1,15 +1,24 @@
 .settings {
+  position: relative;
+}
+
+.settings-wrapper {
   max-width: 700px;
   background: #ffffff;
   box-shadow: 0px 10px 60px rgba(35, 35, 35, 0.15);
   padding: 24px 40px 32px;
   display: grid;
+  grid-template-rows: auto auto 1fr auto;
   gap: 24px;
-  position: relative;
+  position: absolute;
+  width: 790px;
+  left: -390px;
+  top: 50px;
   z-index: 1;
+  max-height: 75vh;
 }
 
-.settings::before {
+.settings-wrapper::before {
   content: "";
   position: absolute;
   width: 32.04px;

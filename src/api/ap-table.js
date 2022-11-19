@@ -1,4 +1,4 @@
-const table = [
+const apTable = [
   {
     id: "1234",
     brand: "Pad",
@@ -95,4 +95,4 @@ const table = [
     archivedDate: "20/08/2022",
   },
 ];
-export default table;
+export default apTable;

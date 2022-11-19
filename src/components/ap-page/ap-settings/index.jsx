@@ -1,7 +1,7 @@
-import "../../styles/settings.css";
-import Button from "../Button";
-import Info from "../SettingsInfo";
-import Options from "../Options";
+import "../../../styles/settings.css";
+import Button from "../../Button";
+import Info from "../../SettingsInfo";
+import Options from "../../Options";
 
 const APSettings = () => {
   const options = [

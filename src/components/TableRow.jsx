@@ -1,5 +1,5 @@
-import "../../styles/ap-table/TableRow.css";
-import CheckBox from "../CheckBox";
+import "../styles/TableRow.css";
+import CheckBox from "./CheckBox";
 
 const TableRow = ({ children }) => {
   return (

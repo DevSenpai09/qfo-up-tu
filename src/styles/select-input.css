@@ -6,10 +6,13 @@
   background-color: #ffffff;
   border-radius: 8px;
   border: 1px solid #d9dbe1;
+  height: min-content;
+  color: #969bab;
+  padding: 8px 16px;
+  box-sizing: border-box;
 }
 
 .select-input__input-wrapper {
-  padding: 8px 16px;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 24px;
@@ -23,13 +26,18 @@
   font-size: 16px;
   line-height: 170%;
   letter-spacing: 0.003em;
-  color: #969bab;
+}
+
+.select-input__input-wrapper__icon {
+  display: flex;
 }
 
 .select-input__drop-down {
   position: absolute;
   width: 100%;
   z-index: 999;
+  left: 0;
+  text-align: left;
 }
 
 .select-input__drop-down--up {

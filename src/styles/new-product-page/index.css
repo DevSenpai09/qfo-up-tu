@@ -1,0 +1,36 @@
+.new-product-form {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.imei-duplicates {
+  margin-top: 32px;
+}
+
+.imei-duplicates__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.imei-duplicates__number {
+  width: 350px;
+}
+
+.imei-duplicates__inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.new-product__details-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}

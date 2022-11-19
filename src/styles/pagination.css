@@ -1,0 +1,41 @@
+.pagination {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  width: max-content;
+}
+
+.pagination__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  margin-right: 38px;
+}
+
+.pagination-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  align-items: center;
+}
+
+.pagination-numbers__btns {
+  display: flex;
+  width: max-content;
+}
+
+.pagination-numbers__btn {
+  width: 36px;
+  height: 36px;
+  padding: 6px 8px 6px 8px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #d9dbe1;
+}
+
+.pagination-numbers__btn:nth-of-type(n + 2) {
+  margin-left: 4px;
+}

@@ -1,5 +1,5 @@
-import CheckBox from "../CheckBox";
-import "../../styles/ap-table/TableHeader.css";
+import CheckBox from "../../CheckBox";
+import "../../../styles/TableHeader.css";
 
 const TableHeader = () => {
   return (

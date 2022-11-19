@@ -8,6 +8,7 @@
   letter-spacing: 0.003em;
   color: #474a57;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .tag--active {

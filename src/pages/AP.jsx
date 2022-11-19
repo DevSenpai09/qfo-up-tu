@@ -1,8 +1,8 @@
 import AlertBox from "../components/AlertBox";
-import APFilter from "../components/ap-filters";
+import APFilter from "../components/ap-page/ap-filters";
 import Date from "../components/FilterDate";
 import Tags from "../components/Tag";
-import APSettings from "../components/ap-settings";
+import APSettings from "../components/ap-page/ap-settings";
 import Info from "../components/SettingsInfo";
 import Options from "../components/Options";
 import Button from "../components/Button";
@@ -11,10 +11,9 @@ import Notifications from "../components/notifications";
 import NotificationItem from "../components/notifications/notificationItem";
 import ToolTip from "../components/ToolTip";
 import NotificationsHeader from "../components/notifications/NotificationsHeader";
-import APTable from "../components/ap-table";
+import APTable from "../components/ap-page/ap-table";
 import NotificationBell from "../components/notificationBell";
 import BrandSelect from "../components/brand-select";
-import PaginationSelect from "../components/pagination-select";
 
 const AP = () => {
   return (

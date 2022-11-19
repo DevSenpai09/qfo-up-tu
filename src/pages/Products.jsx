@@ -1,21 +1,24 @@
-import ProductsSettings from "../components/product-settings";
+import Pagination from "../components/pagination";
+import ProductPageTable from "../components/products-page/products-table/product-page-table";
+import SubHeader from "../components/products-page/sub-header";
 
-const Products = () => {
+const ProductPage1 = () => {
   return (
-    <>
-      <h1>Products Components</h1>
-      <div
-        style={{
-          display: "grid",
-          justifyContent: "left",
-          justifyItems: "left",
-          gap: "30px",
-        }}
-      >
-        <ProductsSettings />
-      </div>
-    </>
+    <main
+      style={{
+        display: "grid",
+        gridTemplateRows: "auto 1fr auto",
+        height: "100vh",
+        padding: "20px",
+        boxSizing: "border-box",
+        gap: "24px",
+      }}
+    >
+      <SubHeader />
+      <ProductPageTable />
+      <Pagination />
+    </main>
   );
 };
 
-export default Products;
+export default ProductPage1;

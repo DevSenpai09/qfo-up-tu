@@ -1,9 +1,9 @@
 import "../styles/ToolTip.css";
 
-const ToolTip = () => {
+const ToolTip = ({ unread }) => {
   return (
     <div className="tool-tip">
-      <p className="tool-tip__text">You have 6 unread messages!</p>
+      <p className="tool-tip__text">You have {unread} unread messages!</p>
     </div>
   );
 };

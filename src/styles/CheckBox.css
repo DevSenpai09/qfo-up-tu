@@ -1,7 +1,7 @@
 .checkbox {
   display: inline-grid;
-  align-items: center;
   justify-items: center;
+  cursor: pointer;
 }
 
 .checkbox__input {
@@ -11,6 +11,7 @@
   border: 1px solid #d9dbe1;
   border-radius: 6px;
   grid-area: -1/1;
+  margin: 0;
 }
 
 .checkbox__input:checked {
@@ -22,6 +23,7 @@
   grid-area: -1/1;
   color: #474a57;
   display: none;
+  align-self: center;
 }
 
 .checkbox__input:checked ~ .checkbox__icon {
