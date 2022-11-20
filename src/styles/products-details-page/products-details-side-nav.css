@@ -1,0 +1,22 @@
+.products-details-side-nav {
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 205px;
+  padding: 16px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.products-details-side-nav__cta {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  padding: 8px 16px;
+}
+
+.products-details-side-nav__cta--active {
+  background: #cfe436;
+  border-radius: 8px;
+}

@@ -1,0 +1,6 @@
+.products-details-sub-header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: right;
+  gap: 24px;
+}

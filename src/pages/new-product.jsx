@@ -1,11 +1,11 @@
 import "../styles/new-product-page/index.css";
 
-import PriceInput from "../components/new-product-page/inputs/price-input";
-import NumberInput from "../components/new-product-page/inputs/number-input";
-import RadioInput from "../components/new-product-page/inputs/radio-input";
-import TextInput from "../components/new-product-page/inputs/text-input";
+import PriceInput from "../components/inputs/price-input";
+import NumberInput from "../components/inputs/number-input";
+import RadioInput from "../components/inputs/radio-input";
+import TextInput from "../components/inputs/text-input";
 import SubHeader from "../components/new-product-page/sub-header";
-import NewSelectInput from "../components/new-product-page/inputs/new-select-input";
+import NewSelectInput from "../components/inputs/new-select-input";
 
 const NewProductPage = () => {
   const deviceTypes = ["Mobile Phone", "Others"];

@@ -1,5 +1,5 @@
-import "../../../styles/new-product-page/inputs.css";
-import SelectInput from "../../select-input";
+import "../../styles/inputs.css";
+import SelectInput from "../select-input";
 
 const NewSelectInput = ({ id, title, placeholder, options }) => {
   return (
@@ -7,7 +7,9 @@ const NewSelectInput = ({ id, title, placeholder, options }) => {
       <label htmlFor={id} className="input-title">
         {title}
       </label>
-      <SelectInput placeholder={placeholder} options={options} />
+      <div className="new-select-input__input">
+        <SelectInput placeholder={placeholder} options={options} />
+      </div>
     </div>
   );
 };

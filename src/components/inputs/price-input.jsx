@@ -1,5 +1,5 @@
-import "../../../styles/new-product-page/inputs.css";
-import SelectInput from "../../select-input";
+import "../../styles/inputs.css";
+import SelectInput from "../select-input";
 
 const PriceInput = ({ id, title }) => {
   const options = [

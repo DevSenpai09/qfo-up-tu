@@ -1,0 +1,41 @@
+.products-details-page__general {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.products-details-page__general-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 24px;
+}
+
+.products-details-page__general-header__details {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.products-details-page__general-header__details > * {
+  margin: 0;
+}
+
+.products-details-page__general-header__icons {
+  cursor: pointer;
+}
+
+.products-details-page__general-form {
+  display: grid;
+}
+
+.products-details-page__general-form__copy {
+  justify-self: right;
+  cursor: pointer;
+}
+
+.products-details-page__general-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 10px;
+}

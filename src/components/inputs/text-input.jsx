@@ -1,4 +1,4 @@
-import "../../../styles/new-product-page/inputs.css";
+import "../../styles/inputs.css";
 
 const TextInput = ({ title, placeholder, id }) => {
   return (

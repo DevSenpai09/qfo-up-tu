@@ -84,3 +84,7 @@
   color: #121212;
   position: initial;
 }
+
+.new-select-input__input {
+  margin-top: 8px;
+}
