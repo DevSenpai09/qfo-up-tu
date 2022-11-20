@@ -1,0 +1,34 @@
+.products-details-sold-history {
+  background: #ffffff;
+  padding: 32px;
+  display: grid;
+  border-radius: 16px;
+  margin-top: 32px;
+  box-sizing: border-box;
+}
+
+.products-details-sold-history__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  margin: 0;
+  color: #474a57;
+}
+
+.products-details-no-data {
+  display: grid;
+}
+
+.products-details-sold-history__no-data-img {
+  justify-self: center;
+}
+
+.products-details-sold-history__no-data-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  justify-self: center;
+}

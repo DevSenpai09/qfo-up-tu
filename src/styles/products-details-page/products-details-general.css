@@ -2,12 +2,12 @@
   background-color: #ffffff;
   padding: 32px;
   border-radius: 16px;
+  height: max-content;
 }
 
 .products-details-page__general-header {
   display: grid;
   grid-template-columns: 1fr auto;
-  margin-bottom: 24px;
 }
 
 .products-details-page__general-header__details {
@@ -26,6 +26,7 @@
 
 .products-details-page__general-form {
   display: grid;
+  margin-top: 24px;
 }
 
 .products-details-page__general-form__copy {

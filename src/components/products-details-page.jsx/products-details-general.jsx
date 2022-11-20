@@ -4,10 +4,8 @@ import TextInput from "../inputs/text-input";
 import NewSelectInput from "../inputs/new-select-input";
 import "../../styles/products-details-page/products-details-general.css";
 import Tags from "../Tag";
-import { useState } from "react";
 
-const ProductsDetailsGeneral = () => {
-  const [isShowForm, setIsShowForm] = useState(false);
+const ProductsDetailsGeneral = ({ currentPage, isShow, setIsShow }) => {
   const deviceTypes = ["Mobile Phone", "Others"];
   return (
     <div className="products-details-page__general">
@@ -23,16 +21,16 @@ const ProductsDetailsGeneral = () => {
         </div>
         <div
           className="products-details-page__general-header__icons"
-          onClick={() => setIsShowForm(!isShowForm)}
+          onClick={() => setIsShow(!isShow)}
         >
-          {!isShowForm ? (
+          {!isShow ? (
             <img src="/src/assets/downarrow.svg" alt="Icon" />
           ) : (
             <img src="/src/assets/uparrow.svg" alt="Icon" />
           )}
         </div>
       </div>
-      {isShowForm && (
+      {currentPage === "general" && isShow && (
         <div className="products-details-page__general-form">
           <img
             src="/src/assets/copy.svg"
