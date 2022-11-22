@@ -97,7 +97,8 @@
 /* End Table */
 
 /* Create User */
-.manage-users-create-user {
+.manage-users-create-user,
+.manage-users-edit-user {
   position: fixed;
   top: 0;
   left: 0;

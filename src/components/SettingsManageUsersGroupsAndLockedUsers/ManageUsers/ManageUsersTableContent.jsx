@@ -1,6 +1,9 @@
+import { useState } from "react";
 import CheckBox from "../../CheckBox";
+import ManageUsersEditUser from "./ManageUsersEditUser";
 
 const ManageUsersTableContent = () => {
+  const [isEdit, setIsEdit] = useState(false);
   const users = [
     {
       name: "Eva Wang",
@@ -72,11 +75,16 @@ const ManageUsersTableContent = () => {
           </div>
           <div className="manage-users-table-content__icons">
             <img src="/src/assets/green-right-arrow.svg" alt="Icons" />
-            <img src="/src/assets/edit.svg" alt="Icons" />
+            <img
+              src="/src/assets/edit.svg"
+              alt="Icons"
+              onClick={() => setIsEdit(!isEdit)}
+            />
             <img src="/src/assets/bin.svg" alt="Icons" />
           </div>
         </div>
       ))}
+      {isEdit && <ManageUsersEditUser isEdit={isEdit} setIsEdit={setIsEdit} />}
     </div>
   );
 };
