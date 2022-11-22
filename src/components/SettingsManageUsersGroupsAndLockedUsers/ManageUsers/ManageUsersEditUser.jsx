@@ -7,14 +7,14 @@ import PasswordInput from "../../inputs/PasswordInput";
 const ManageUsersEditUser = ({ isEdit, setIsEdit }) => {
   return (
     <div className="manage-users-edit-user">
-      <form action="" className="manage-users-create-user__form">
-        <div className="manage-users-create-user__form__header">
-          <h4 className="manage-users-create-user__form__title">Edit User</h4>
+      <form action="" className="manage-users-edit-user__form">
+        <div className="manage-users-edit-user__form__header">
+          <h4 className="manage-users-edit-user__form__title">Edit User</h4>
           <img
             src="/src/assets/close.svg"
             alt="Icon"
             onClick={() => setIsEdit(!isEdit)}
-            className="manage-users-create-user__form__close"
+            className="manage-users-edit-user__form__close"
           />
         </div>
         <TextInput placeholder="Name" title="Name" id="user_name" />

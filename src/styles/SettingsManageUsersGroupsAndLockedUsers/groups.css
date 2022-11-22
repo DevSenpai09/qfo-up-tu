@@ -1,4 +1,4 @@
-.manage-users {
+.groups {
   padding: 24px;
   display: grid;
   gap: 24px;
@@ -6,12 +6,12 @@
 }
 
 /* Sub Header */
-.manage-user-sub-header {
+.groups-sub-header {
   display: flex;
   justify-content: space-between;
 }
 
-.manage-user-sub-header__input-wrapper {
+.groups-sub-header__input-wrapper {
   background: #fff;
   padding: 8px 32px;
   border-radius: 8px;
@@ -23,7 +23,7 @@
   min-width: 360px;
 }
 
-.manage-user-sub-header__input {
+.groups-sub-header__input {
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
@@ -35,29 +35,31 @@
   width: 100%;
 }
 
-.manage-user-sub-header__input::placeholder {
+.groups-sub-header__input::placeholder {
   color: #969bab;
 }
 /* End Sub Header */
 
 /* Table */
-.manage-users-table {
+.groups-table {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 12px 0;
+  height: 100%;
+  overflow: auto;
 }
 
-.manage-users-table-row {
+.groups-table-row {
   display: flex;
   align-items: center;
   padding: 0 16px;
 }
 
-.manage-users-table-header {
+.groups-table-header {
   padding-bottom: 18px;
 }
 
-.manage-users-table-header__data {
+.groups-table-header__data {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
@@ -65,22 +67,22 @@
   color: #121212;
 }
 
-.manage-users-table-content__row {
+.groups-table-content__row {
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
 }
 
-.manage-users-table-content__row:nth-of-type(odd) {
+.groups-table-content__row:nth-of-type(odd) {
   background: #f9fafb;
 }
 
-.manage-users-table-row__data {
+.groups-table-row__data {
   width: 150px;
   margin-left: 20px;
 }
 
-.manage-users-table-row-content__data {
+.groups-table-row-content__data {
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
@@ -88,7 +90,7 @@
   color: #474a57;
 }
 
-.manage-users-table-content__icons {
+.groups-table-content__icons {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 17px;
@@ -97,8 +99,8 @@
 /* End Table */
 
 /* Create User */
-.manage-users-create-user,
-.manage-users-edit-user {
+.groups-create-user,
+.groups-edit-user {
   position: fixed;
   top: 0;
   left: 0;
@@ -112,8 +114,8 @@
   box-sizing: border-box;
 }
 
-.manage-users-create-user__form,
-.manage-users-edit-user__form {
+.groups-create-user__form,
+.groups-edit-user__form {
   width: 100%;
   max-width: 408px;
   background-color: #ffffff;
@@ -123,15 +125,15 @@
   gap: 24px;
 }
 
-.manage-users-create-user__form__header,
-.manage-users-edit-user__form__header {
+.groups-create-user__form__header,
+.groups-edit-user__form__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.manage-users-create-user__form__title,
-.manage-users-edit-user__form__title {
+.groups-create-user__form__title,
+.groups-edit-user__form__title {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
@@ -140,8 +142,8 @@
   margin: 0;
 }
 
-.manage-users-create-user__form__close,
-.manage-users-edit-user__form__close {
+.groups-create-user__form__close,
+.groups-edit-user__form__close {
   cursor: pointer;
 }
 /* End Create User */
