@@ -1,7 +1,7 @@
 const NumberInput = ({ id, title, placeholder }) => {
   return (
     <div className="input-wrapper">
-      <label htmlFor={id} className="input-title">
+      <label htmlFor={id} className="input__title">
         {title}
       </label>
       <input

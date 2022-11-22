@@ -15,7 +15,7 @@ const PriceInput = ({ id, title }) => {
   ];
   return (
     <div className="input-wrapper">
-      <label htmlFor={id} className="input-title">
+      <label htmlFor={id} className="input__title">
         {title}
       </label>
       <div className="price-input">

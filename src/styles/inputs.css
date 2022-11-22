@@ -1,14 +1,26 @@
 .input-wrapper {
   display: grid;
+  position: relative;
 }
 
-.input-title {
+.input__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
   letter-spacing: 0.003em;
   color: #474a57;
   margin: 0;
+}
+
+.input__error-message {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 0.003em;
+  color: #f16a6a;
+  margin: 0;
+  position: absolute;
+  bottom: -24px;
 }
 
 .input {

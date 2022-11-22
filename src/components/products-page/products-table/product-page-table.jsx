@@ -1,4 +1,4 @@
-// import "../../../styles/products-page/products-table/index.css";
+import "../../../styles/products-page/products-table.css";
 import TableHeader from "./products-table-header";
 import TableContent from "./products-table-content";
 

@@ -6,7 +6,7 @@ import ProductsDeatilsSubHeader from "../components/products-details-page.jsx/pr
 import "../styles/products-details-page/index.css";
 
 const ProductsDetailsPage = () => {
-  const [currentPage, setCurrentPage] = useState("sold");
+  const [currentPage, setCurrentPage] = useState("sold_history");
   const [isShow, setIsShow] = useState(false);
 
   return (
@@ -22,14 +22,19 @@ const ProductsDetailsPage = () => {
     >
       <ProductsDeatilsSubHeader />
       <div className="products-details-page__content">
-        <ProductsDetailsSideNav setCurrentPage={setCurrentPage} />
+        <ProductsDetailsSideNav
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
         <div>
           <ProductsDetailsGeneral
             currentPage={currentPage}
             isShow={isShow}
             setIsShow={setIsShow}
           />
-          {currentPage === "sold" && isShow && <ProdcutsDetailsSoldHistory />}
+          {currentPage === "sold_history" && isShow && (
+            <ProdcutsDetailsSoldHistory />
+          )}
         </div>
       </div>
     </main>

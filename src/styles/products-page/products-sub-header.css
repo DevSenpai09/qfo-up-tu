@@ -75,7 +75,7 @@
   margin: 0;
 }
 
-.sub-header__applied-filters__keywords {
+.sub-header__applied-filter {
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
@@ -86,11 +86,11 @@
   margin-left: 16px;
 }
 
-.sub-header__applied-filters__keywords-title {
+.sub-header__applied-filter__title {
   margin: 0;
 }
 
-.sub-header__applied-filters__keyword {
+.sub-header__applied-filter__text {
   display: grid;
   grid-template-columns: auto auto;
   gap: 8px;

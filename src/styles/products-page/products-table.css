@@ -1,0 +1,7 @@
+.products-table {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 100%;
+  overflow: auto;
+}

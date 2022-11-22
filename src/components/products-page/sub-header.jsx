@@ -37,16 +37,11 @@ const SubHeader = () => {
       {/* Applied Filters */}
       <div className="sub-header__applied-filters">
         <h4 className="sub-header__applied-filters__title">Applied filters:</h4>
-        <div className="sub-header__applied-filters__keywords">
-          <p className="sub-header__applied-filters__keywords-title">
-            Keyword:
+        <div className="sub-header__applied-filter">
+          <h4 className="sub-header__applied-filter__title">Keyword:</h4>
+          <p className="sub-header__applied-filter__text">
+            Martin <img src="/src/assets/filter-cancel.svg" alt="Icon" />
           </p>
-          <div className="sub-header__applied-filters__keyword">
-            Martin <img src="/src/assets/filter-cancel.svg" alt="Icon" />
-          </div>
-          <div className="sub-header__applied-filters__keyword">
-            Martin <img src="/src/assets/filter-cancel.svg" alt="Icon" />
-          </div>
         </div>
 
         <Button text="Clear All" />

@@ -7,9 +7,13 @@ const Options = ({ options }) => {
     <div className="options-wrapper">
       {options &&
         options.map((option) => (
-          <div key={uuid()} className="option">
+          <div
+            key={uuid()}
+            className={`option ${option.drag && "option--drag"}`}
+          >
             <CheckBox />
-            <p className="option__text">{option}</p>
+            <p className="option__text">{option.option}</p>
+            <img src="/src/assets/circle-grid.svg" alt="icon" />
           </div>
         ))}
     </div>
