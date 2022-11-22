@@ -5,6 +5,7 @@
   grid-template-rows: auto 1fr auto;
 }
 
+/* Sub Header */
 .manage-user-sub-header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,9 @@
 .manage-user-sub-header__input::placeholder {
   color: #969bab;
 }
+/* End Sub Header */
 
+/* Table */
 .manage-users-table {
   background-color: #ffffff;
   border-radius: 8px;
@@ -91,3 +94,49 @@
   gap: 17px;
   padding-right: 16px;
 }
+/* End Table */
+
+/* Create User */
+.manage-users-create-user {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(35, 35, 35, 0.7);
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.manage-users-create-user__form {
+  width: 100%;
+  max-width: 408px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  display: grid;
+  gap: 24px;
+}
+
+.manage-users-create-user__form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.manage-users-create-user__form__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+}
+
+.manage-users-create-user__form__close {
+  cursor: pointer;
+}
+/* End Create User */

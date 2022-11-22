@@ -13,7 +13,10 @@ const ManageUsersTableHeader = () => {
         <CheckBox />
       </div>
       {headers.map((header) => (
-        <div className="manage-users-table-header__data manage-users-table-row__data">
+        <div
+          key={header.header}
+          className="manage-users-table-header__data manage-users-table-row__data"
+        >
           {header.header}
         </div>
       ))}

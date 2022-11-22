@@ -31,9 +31,13 @@
   font-size: 16px;
   line-height: 170%;
   letter-spacing: 0.003em;
-  color: #969bab;
+  color: #121212;
   margin-top: 8px;
   outline: none;
+}
+
+.input::placeholder {
+  color: #969bab;
 }
 
 .radio-input__options {
@@ -99,4 +103,25 @@
 
 .new-select-input__input {
   margin-top: 8px;
+}
+
+.pass-input {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.pass-input__input {
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+}
+
+.pass-input__input::placeholder {
+  color: #969bab;
 }

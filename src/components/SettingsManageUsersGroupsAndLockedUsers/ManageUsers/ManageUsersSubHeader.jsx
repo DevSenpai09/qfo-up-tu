@@ -1,7 +1,10 @@
 import Button from "../../Button";
 import "../../../styles/SettingsManageUsersGroupsAndLockedUsers/manage-users.css";
+import ManageUsersCreateUser from "./ManageUsersCreateUser";
+import { useState } from "react";
 
 const ManageUsersSubHeader = () => {
+  const [isCreateUser, setIsCreateUser] = useState(false);
   return (
     <div className="manage-user-sub-header">
       <label className="manage-user-sub-header__input-wrapper">
@@ -17,7 +20,15 @@ const ManageUsersSubHeader = () => {
         />
       </label>
 
-      <Button text="+ New User" primary />
+      <div onClick={() => setIsCreateUser(!isCreateUser)}>
+        <Button text="+ New User" primary />
+      </div>
+      {isCreateUser && (
+        <ManageUsersCreateUser
+          isCreateUser={isCreateUser}
+          setIsCreateUser={setIsCreateUser}
+        />
+      )}
     </div>
   );
 };

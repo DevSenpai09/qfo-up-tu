@@ -54,7 +54,7 @@ const ManageUsersTableContent = () => {
   return (
     <div>
       {users.map((user) => (
-        <div className="manage-users-table-content__row">
+        <div key={Math.random()} className="manage-users-table-content__row">
           <div className="manage-users-table-row">
             <CheckBox />
             <div className="manage-users-table-row__data manage-users-table-row-content__data">
