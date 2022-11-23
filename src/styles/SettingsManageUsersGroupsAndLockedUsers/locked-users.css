@@ -1,0 +1,128 @@
+.locked-users {
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+  grid-template-rows: auto 1fr auto;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* Sub Header */
+.locked-users-sub-header__input-wrapper {
+  background: #fff;
+  padding: 8px 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9dbe1;
+  width: 270px;
+  box-sizing: border-box;
+}
+
+.locked-users-sub-header__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.locked-users-sub-header__input::placeholder {
+  color: #969bab;
+}
+/* End Sub Header */
+
+/* Table */
+.locked-users-table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 0;
+  overflow: auto;
+}
+
+.locked-users-table-row {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.locked-users-table-header {
+  padding-bottom: 18px;
+}
+
+.locked-users-table-header__data {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.003em;
+  color: #121212;
+}
+
+.locked-users-table-content__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.locked-users-table-content__row:nth-of-type(odd) {
+  background: #f9fafb;
+}
+
+.locked-users-table-row__data {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.locked-users-table-row-content__data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+}
+
+.locked-users-table-content__icons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 17px;
+  padding-right: 16px;
+}
+
+.locked-users-table__email {
+  width: 250px;
+}
+
+.locked-users-table__reason {
+  width: 430px;
+}
+/* End Table */
+
+/* Unlock User */
+.locked-users-unlock-user {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(35, 35, 35, 0.7);
+  z-index: 999;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.locked-users-unlock-user__form {
+  width: 100%;
+  max-width: 408px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  display: grid;
+  gap: 24px;
+}
