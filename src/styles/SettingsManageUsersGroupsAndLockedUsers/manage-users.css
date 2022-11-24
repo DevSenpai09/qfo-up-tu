@@ -3,6 +3,8 @@
   display: grid;
   gap: 24px;
   grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 /* Sub Header */
@@ -145,3 +147,288 @@
   cursor: pointer;
 }
 /* End Create User */
+
+/* Manage Users Permission */
+.manage-users-permissions {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Manage Users Permission Left Side */
+
+.manage-users-permissions-left-side {
+  width: 479px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  height: 100%;
+  overflow: auto;
+}
+.manage-users-permissions-left-side__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 24px 32px 16px;
+  box-sizing: border-box;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.manage-users-permissions-left-side__header__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+  margin-left: 21px;
+}
+
+.manange-users-permissions-left-side__header__input-wrapper {
+  background: #fff;
+  padding: 8px 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9dbe1;
+  width: max-content;
+  box-sizing: border-box;
+  width: 100%;
+  grid-column: 1 / end;
+}
+
+.manange-users-permissions-left-side__header__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.manange-users-permissions-left-side__header__input::placeholder {
+  color: #969bab;
+}
+
+.manage-users-permissions-left-side__users-list {
+  display: grid;
+  gap: 16px;
+}
+
+.manage-users-permissions-left-side__user {
+  padding: 8px 32px;
+}
+
+.manage-users-permissions-left-side__user--active {
+  background-color: #eff6bc;
+}
+
+.manage-users-permissions-left-side__user__name-and-tag {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.manage-users-permissions-left-side__user__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+  margin-right: 16px;
+}
+
+.manage-users-permissions-left-side__user__other-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+.manage-users-permissions-left-side__user__email,
+.manage-users-permissions-left-side__user__group {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  margin: 0;
+}
+
+/* Manage Users Permission Right Side */
+.manage-users-permissions-right-side {
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 32px 0;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.manage-users-permissions-right-side__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 15px;
+  padding: 0 32px;
+}
+
+.manage-users-permissions-right-side__header__email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+}
+
+.manage-users-permissions-right-side__header__close-icon {
+  justify-self: right;
+}
+
+.manage-users-permissions-right-side__permissions {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  height: 100%;
+  overflow: auto;
+}
+
+.manage-users-permissions-right-side__permissions__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  margin: 40px 0 10px;
+  padding: 0 32px;
+}
+
+.manage-users-permissions-right-side__permissions__nav {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  width: max-content;
+  gap: 48px;
+  padding: 0 32px;
+}
+
+.manage-users-permissions-right-side__permissions__nav-links {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #969bab;
+  padding-bottom: 8px;
+}
+
+.manage-users-permissions-right-side__permissions__nav-links--active {
+  color: #a1b418;
+  border-bottom: 1px solid #a1b418;
+}
+
+.manage-users-permissions-right-side__btns {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: right;
+  gap: 24px;
+  padding-right: 32px;
+}
+
+.manage-users-permissions-right-side__permissions__nav-permission {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.manage-users-permissions-right-side__permissions__nav-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #000000;
+  margin: 24px 0;
+}
+
+.manage-users-permissions-user-permissions-wrapper {
+  height: 100%;
+  overflow-y: scroll;
+  padding-left: 32px;
+}
+
+.manage-users-permissions-user-permissions-wrapper__sub-wrapper {
+  padding-right: 15px;
+}
+
+.manage-users-permissions-user-permission {
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.manage-users-permissions-user-permission__text {
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.manage-users-permissions-user-permission__icons {
+  display: flex;
+  width: 12px;
+  height: 7px;
+}
+
+.manage-users-permissions-user-permission__dropDown {
+  grid-column: 2 / end;
+}
+
+.manage-users-permissions-toggle {
+  width: 44px;
+  height: 24px;
+  border-radius: 32px;
+  background-color: #d9dbe1;
+  position: relative;
+}
+
+.manage-users-permissions-toggle__switch {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.manage-users-permissions-toggle--partial-active {
+  background-color: #facb1f;
+  height: 27px;
+}
+
+.manage-users-permissions-toggle--full-active {
+  background-color: #cfe436;
+}
+
+.manage-users-permissions-toggle--partial-active
+  .manage-users-permissions-toggle__switch {
+  left: 25%;
+}
+
+.manage-users-permissions-toggle--full-active
+  .manage-users-permissions-toggle__switch {
+  left: 50%;
+}
+
+/* End Manage Users Permissions */

@@ -5,9 +5,9 @@ import ManageUsers from "../components/SettingsManageUsersGroupsAndLockedUsers/M
 const SettingsManageUsersGroupsAndLockedUsers = () => {
   return (
     <div>
-      {/* <ManageUsers /> */}
+      <ManageUsers />
       {/* <Groups /> */}
-      <LockedUsers />
+      {/* <LockedUsers /> */}
     </div>
   );
 };
