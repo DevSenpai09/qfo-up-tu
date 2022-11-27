@@ -1,3 +1,4 @@
+import ArchivedProducts from "./components/ArchivedProducts";
 import AP from "./pages/AP";
 import NewProductPage from "./pages/new-product";
 import Products from "./pages/Products";
@@ -11,7 +12,8 @@ function App() {
       {/* <Products /> */}
       {/* <NewProductPage /> */}
       {/* <ProductsDetailsPage /> */}
-      <SettingsManageUsersGroupsAndLockedUsers />
+      {/* <SettingsManageUsersGroupsAndLockedUsers /> */}
+      <ArchivedProducts />
     </>
   );
 }
