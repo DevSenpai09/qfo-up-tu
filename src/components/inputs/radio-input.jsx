@@ -3,7 +3,7 @@ import "../../styles/inputs.css";
 const RadioInput = ({ title, name, radioInputs }) => {
   return (
     <div>
-      <h4 className="input-title">{title}</h4>
+      <h4 className="input__title">{title}</h4>
       <div className="radio-input__options">
         {radioInputs &&
           radioInputs.map((input) => (
