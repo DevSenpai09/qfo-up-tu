@@ -1,9 +1,12 @@
 import { useState } from "react";
-import ProductsDetailsGeneral from "../components/products-details-page.jsx/products-details-general";
-import ProductsDetailsSideNav from "../components/products-details-page.jsx/products-details-side-nav";
-import ProdcutsDetailsSoldHistory from "../components/products-details-page.jsx/products-details-sold-history";
-import ProductsDeatilsSubHeader from "../components/products-details-page.jsx/products-details-sub-header";
+import ProductsDetailsGeneral from "../components/products-details-page/products-details-general";
+import ProductsDetailsSideNav from "../components/products-details-page/products-details-side-nav";
+import ProdcutsDetailsSoldHistory from "../components/products-details-page/ProductsDetailsSoldHistory";
+import ProductsDeatilsSubHeader from "../components/products-details-page/products-details-sub-header";
 import "../styles/products-details-page/index.css";
+import ProductsDetailsAuditTrail from "../components/products-details-page/ProductsDetailsAuditTrail";
+import Tags from "../components/Tag";
+import ProductsDetailsComments from "../components/products-details-page/ProductsDetailsComments";
 
 const ProductsDetailsPage = () => {
   const [currentPage, setCurrentPage] = useState("sold_history");
@@ -26,14 +29,35 @@ const ProductsDetailsPage = () => {
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         />
-        <div>
-          <ProductsDetailsGeneral
-            currentPage={currentPage}
-            isShow={isShow}
-            setIsShow={setIsShow}
-          />
-          {currentPage === "sold_history" && isShow && (
-            <ProdcutsDetailsSoldHistory />
+        <div className="products-details-page__sub-sections">
+          <div className="products-details-page__sub-sections-header">
+            <div className="products-details-page__sub-sections-header__details">
+              <Tags text="Shipped" active />
+              <p className="products-details-page__sub-sections-header__product-id">
+                #148527
+              </p>
+              <p className="products-details-page__sub-sections-header__product-imei">
+                354860095332325
+              </p>
+            </div>
+            <div
+              className="products-details-page__sub-sections-header__icons"
+              onClick={() => setIsShow(!isShow)}
+            >
+              {!isShow ? (
+                <img src="/src/assets/downarrow.svg" alt="Icon" />
+              ) : (
+                <img src="/src/assets/uparrow.svg" alt="Icon" />
+              )}
+            </div>
+          </div>
+          {isShow && (
+            <div className="products-details-page__sub-sections__main">
+              {currentPage === "general" && <ProductsDetailsGeneral />}
+              {currentPage === "sold_history" && <ProdcutsDetailsSoldHistory />}
+              {currentPage === "audit_trail" && <ProductsDetailsAuditTrail />}
+              {currentPage === "comments" && <ProductsDetailsComments />}
+            </div>
           )}
         </div>
       </div>

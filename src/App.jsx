@@ -10,10 +10,10 @@ function App() {
     <>
       {/* <Products /> */}
       {/* <NewProductPage /> */}
-      {/* <ProductsDetailsPage /> */}
+      <ProductsDetailsPage />
       {/* <SettingsManageUsersGroupsAndLockedUsers /> */}
       {/* <ArchivedProducts /> */}
-      <Suppliers />
+      {/* <Suppliers /> */}
     </>
   );
 }

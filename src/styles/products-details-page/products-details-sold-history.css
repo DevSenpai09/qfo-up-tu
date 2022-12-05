@@ -1,34 +1,44 @@
 .products-details-sold-history {
-  background: #ffffff;
-  padding: 32px;
-  display: grid;
-  border-radius: 16px;
-  margin-top: 32px;
+  overflow: auto;
+}
+
+/* Table */
+.products-details-sold-history-table {
+  border: 1px solid #d9dbe1;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+  overflow: auto;
   box-sizing: border-box;
 }
 
-.products-details-sold-history__title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 170%;
+.products-details-sold-history-table-row {
+  display: flex;
+  width: max-content;
+  padding: 12px 16px;
+  gap: 24px;
+}
+
+.products-details-sold-history-table-header__data {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
   letter-spacing: 0.003em;
-  margin: 0;
-  color: #474a57;
+  color: #121212;
+  width: 150px;
 }
 
-.products-details-no-data {
-  display: grid;
+.products-details-sold-history-table-content {
+  border-top: 1px solid #d9dbe1;
 }
 
-.products-details-sold-history__no-data-img {
-  justify-self: center;
-}
-
-.products-details-sold-history__no-data-text {
+.products-details-sold-history-table-content__data {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 170%;
   letter-spacing: 0.003em;
   color: #474a57;
-  justify-self: center;
+  width: 150px;
 }
+
+/* End Table */

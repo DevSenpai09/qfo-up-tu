@@ -1,0 +1,115 @@
+/* Table */
+.products-details-comments-table {
+  border: 1px solid #d9dbe1;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.products-details-comments-table-row {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1.5fr 100px;
+  padding: 12px 16px;
+  gap: 24px;
+}
+
+.products-details-comments-header__data {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.003em;
+  color: #121212;
+}
+
+.products-details-comments-content {
+  border-top: 1px solid #d9dbe1;
+}
+
+.products-details-comments-content__data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+}
+
+.products-details-comments-content__comment-title {
+  color: #121212;
+}
+
+.products-details-comments-content__data-icons {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  width: max-content;
+}
+/* End Table */
+
+/* Module */
+.products-details-module__bg {
+  background-color: rgba(35, 35, 35, 0.7);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+.products-details-module__form {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  width: 408px;
+  display: grid;
+  gap: 28px;
+}
+
+.products-details-module__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-details-module__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.003em;
+  color: #121212;
+  margin: 0;
+}
+
+.products-details-module__input-wrapper {
+  display: grid;
+  gap: 6px;
+}
+
+.products-details-module__input-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+}
+
+.products-details-module__input {
+  border: 1px solid #d9dbe1;
+  border-radius: 8px;
+  resize: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  padding: 8px 16px;
+  min-height: 100px;
+  color: #121212;
+  outline: none;
+}
+
+.products-details-module__input::placeholder {
+  color: #969bab;
+}
+/* End Module */

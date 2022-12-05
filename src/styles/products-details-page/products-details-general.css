@@ -1,32 +1,5 @@
-.products-details-page__general {
-  background-color: #ffffff;
-  padding: 32px;
-  border-radius: 16px;
-  height: max-content;
-}
-
-.products-details-page__general-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-
-.products-details-page__general-header__details {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.products-details-page__general-header__details > * {
-  margin: 0;
-}
-
-.products-details-page__general-header__icons {
-  cursor: pointer;
-}
-
 .products-details-page__general-form {
   display: grid;
-  margin-top: 24px;
 }
 
 .products-details-page__general-form__copy {

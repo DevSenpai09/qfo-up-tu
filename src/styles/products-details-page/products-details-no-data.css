@@ -1,0 +1,17 @@
+.products-details-no-data {
+  display: grid;
+  margin-top: 10px;
+}
+
+.products-details-no-data__img {
+  justify-self: center;
+}
+
+.products-details-no-data__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.003em;
+  color: #474a57;
+  justify-self: center;
+}
